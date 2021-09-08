@@ -9,7 +9,7 @@
     foreach($posts as $post) {
       if($post['id'] == $postId) {
         $currentPost = $post;
-      }
+       }
     }
 
 }
@@ -41,6 +41,7 @@
        <li><a href="#"><?= $tag ?></a></li>
     <?php endforeach; ?>
       </ul>
+      
       <h3 id="categories-title">Categorias</h3>
       <ul id="categories-list">
     <?php foreach($categories as $category): ?>
@@ -49,7 +50,7 @@
       </ul>
     </aside>
   </main>
-  
+
 <?php
   include_once("templates/footer.php")
 ?>
